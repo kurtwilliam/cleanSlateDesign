@@ -33,18 +33,18 @@ header {
 }
 
 h1 {
-	font-size: 10.5rem;
+	font-size: 8rem;
 	text-align: center;
 	color:white;
 	font-style: italic;
 	text-transform: uppercase;
-	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: black;
 	text-shadow: 5px 5px 0 rgba(0,0,0,1);
 	font-weight: 900;
 	letter-spacing: -2px;
-	line-height: 10rem;
+	line-height: 8rem;
 }
 
 @media(max-width: 705px){
@@ -58,7 +58,7 @@ main {
 	padding:50px 0;
 }
 .container {
-	max-width: 1130px;
+	max-width: 850px;
 	margin:0 auto;
 }
 
@@ -69,13 +69,13 @@ main {
 }
 
 h2 {
-	font-size: 4rem;
+	font-size: 2.8rem;
 	letter-spacing: 1px;
 	font-weight: 600;
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: 2.4rem;
 	text-transform: uppercase;
 	margin: 10px 0;
 	font-weight: 700;
@@ -97,7 +97,7 @@ ul{
 }
 
 ul li {
-	font-size: 2.8rem;
+	font-size: 2rem;
 }
 
 @media (max-width:615px) {
@@ -109,7 +109,7 @@ ul li {
 		margin:0;
 	}
 	h2{
-		font-size: 3rem;
+		font-size: 2.8rem;
 	}
 	main{
 		padding:10px 0;
@@ -121,6 +121,7 @@ ul li {
 
 .person{
 	display: flex;
+	align-items: center;
 }
 
 .person h4 strong {
@@ -143,14 +144,14 @@ ul li {
 
 .portrait {
 	background: url('../assets/olli.jpg');
-	width:175px;
-	height:215px;
+	width:131.25px;
+	height:161.25px;
 	background-size: cover;
-	flex: 0 0 175px;
+	flex: 0 0 131.25px;
 }
 
 .portraitRob{
-	background: url('../assets/olli.jpg');
+	background: url('../assets/rob.jpg');
 	background-size: cover;
 }
 
@@ -160,7 +161,7 @@ ul li {
 		align-items: center;
 	}
 	.portrait.portraitRob, .portrait.portraitOlli {
-		flex: 0 0 215px;
+		flex: 0 0 161.25px;
 	}
 	div.pInfo {
 		padding: 0;
@@ -207,8 +208,9 @@ footer .container{
 	}
 }
 
-.fLeft, .fRight {
+div.fLeft, div.fRight {
 	width:50%;
+	justify-content: center;
 }
 
 .fRight{
@@ -216,19 +218,19 @@ footer .container{
 }
 
 footer h5 {
-	font-size: 5rem;
+	font-size: 3.2rem;
 	text-transform: uppercase;
 	margin: 10px 0;
 	font-weight: 700;
-	line-height: 5rem;
+	line-height: 3.2rem;
 }
 
 h5 span {
 	font-size: 130%;
 }
 
-.fLeft p, .fRight p {
-	font-size: 3rem;
+.fLeft p, .fRight p, .fRight a {
+	font-size: 2.2rem;
 	font-weight:300;
 	line-height: 3rem;
 	margin:0;
@@ -254,18 +256,18 @@ h5 span {
 		align-items: center;
 		text-align: center;
 	}
-	.fRight{
+	div.fRight{
 		margin-top: 20px;
 		border:none;
 		padding:0;
 	}
-	.fLeft {
-		width:100%;
+	div.fLeft {
+		width:75%;
 	}
 }
 
 @media(max-width: 670px) {
-	.fRight {
+	div.fRight {
 		margin-top: 20px;
 		border:none;
 		width:100%;
@@ -274,8 +276,8 @@ h5 span {
 		margin-top: 0;
 		font-size: 4rem;
 	}
-	.fLeft p, .fRight p {
-		font-size: 2.4rem;
+	div.fLeft p, div.fRight p, div.fRight a {
+		font-size: 2.2rem;
 	}
 	h1 {
 		line-height: 7rem;
